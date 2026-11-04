@@ -1,0 +1,131 @@
+.banner {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  border-radius: var(--radius-card);
+  font-family: var(--font-family);
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
+}
+
+.titulo {
+  font-size: var(--font-size-card-title);
+  line-height: var(--line-height-card-title);
+  font-weight: var(--font-weight-card-title);
+  margin-bottom: var(--space-xs);
+}
+
+.mensagem {
+  font-size: var(--font-size-support);
+  line-height: var(--line-height-support);
+  font-weight: var(--font-weight-support);
+  color: var(--color-on-surface-secondary);
+}
+
+.action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  flex-shrink: 0;
+  min-height: var(--min-touch-target);
+  padding: var(--space-sm) var(--space-lg);
+  border: none;
+  border-radius: var(--radius-button);
+  background: none;
+  font-family: var(--font-family);
+  font-size: var(--font-size-support);
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color var(--transition-fast);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.action:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* ── Alerta (error / red) ── */
+.alerta {
+  background-color: color-mix(in srgb, var(--color-error) 10%, transparent);
+  color: var(--color-error);
+}
+
+.alerta .iconWrapper {
+  background-color: color-mix(in srgb, var(--color-error) 15%, transparent);
+  color: var(--color-error);
+}
+
+.alerta .titulo {
+  color: var(--color-error);
+}
+
+.alerta .action {
+  color: var(--color-error);
+}
+
+.alerta .action:hover {
+  background-color: color-mix(in srgb, var(--color-error) 8%, transparent);
+}
+
+/* ── Info (blue) ── */
+.info {
+  background-color: color-mix(in srgb, var(--color-info) 10%, transparent);
+  color: var(--color-info);
+}
+
+.info .iconWrapper {
+  background-color: color-mix(in srgb, var(--color-info) 15%, transparent);
+  color: var(--color-info);
+}
+
+.info .titulo {
+  color: var(--color-info);
+}
+
+.info .action {
+  color: var(--color-info);
+}
+
+.info .action:hover {
+  background-color: color-mix(in srgb, var(--color-info) 8%, transparent);
+}
+
+/* ── Aviso (warning / orange) ── */
+.aviso {
+  background-color: color-mix(in srgb, var(--color-warning) 10%, transparent);
+  color: var(--color-warning);
+}
+
+.aviso .iconWrapper {
+  background-color: color-mix(in srgb, var(--color-warning) 15%, transparent);
+  color: var(--color-warning);
+}
+
+.aviso .titulo {
+  color: var(--color-warning);
+}
+
+.aviso .action {
+  color: var(--color-warning);
+}
+
+.aviso .action:hover {
+  background-color: color-mix(in srgb, var(--color-warning) 8%, transparent);
+}

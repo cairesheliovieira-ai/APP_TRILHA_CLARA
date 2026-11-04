@@ -1,0 +1,135 @@
+{
+  "_meta": {
+    "descricao": "Guia de descarte de resíduos sólidos — cores da coleta seletiva (CONAMA 275/2001)",
+    "nota": "Dados de exemplo para o app Trilha Clara. Confirmar com a administração do parque.",
+    "ultima_atualizacao": "2026-11-03"
+  },
+  "categorias": [
+    {
+      "cor": "azul",
+      "material": "Papel e Papelão",
+      "hex": "#1565C0",
+      "icone": "description",
+      "vai": [
+        "Jornal",
+        "Revista",
+        "Caderno",
+        "Caixa de papelão",
+        "Papel de presente"
+      ],
+      "nao_vai": [
+        "Papel higiênico",
+        "Guardanapo usado",
+        "Papel plastificado",
+        "Fotografias",
+        "Papel carbono"
+      ],
+      "dica": "Dobre as caixas de papelão para economizar espaço no contêiner."
+    },
+    {
+      "cor": "vermelho",
+      "material": "Plástico",
+      "hex": "#C62828",
+      "icone": "local-drink",
+      "vai": [
+        "Garrafa PET",
+        "Pote de iogurte",
+        "Sacola plástica",
+        "Embalagem de shampoo",
+        "Copo descartável"
+      ],
+      "nao_vai": [
+        "Cabo de panela",
+        "Tomada",
+        "Adesivo",
+        "Espuma",
+        "Acrílico"
+      ],
+      "dica": "Esvazie e amasse as garrafas PET antes de descartar."
+    },
+    {
+      "cor": "amarelo",
+      "material": "Metal",
+      "hex": "#F9A825",
+      "icone": "iron",
+      "vai": [
+        "Lata de alumínio",
+        "Lata de conserva",
+        "Tampa de garrafa",
+        "Papel alumínio",
+        "Panela sem cabo"
+      ],
+      "nao_vai": [
+        "Esponja de aço",
+        "Clips",
+        "Grampo",
+        "Prego",
+        "Aerossol não vazio"
+      ],
+      "dica": "Amasse as latas de alumínio para ocupar menos espaço."
+    },
+    {
+      "cor": "verde",
+      "material": "Vidro",
+      "hex": "#2E7D32",
+      "icone": "local-bar",
+      "vai": [
+        "Garrafa de vidro",
+        "Pote de conserva",
+        "Copo de vidro",
+        "Frasco de perfume",
+        "Jarra"
+      ],
+      "nao_vai": [
+        "Espelho",
+        "Lâmpada",
+        "Vidro temperado",
+        "Ampola de remédio",
+        "Cerâmica"
+      ],
+      "dica": "Cuidado ao descartar vidro quebrado — envolva em jornal para evitar acidentes."
+    },
+    {
+      "cor": "marrom",
+      "material": "Orgânico",
+      "hex": "#4E342E",
+      "icone": "eco",
+      "vai": [
+        "Resto de comida",
+        "Casca de fruta",
+        "Borra de café",
+        "Folha seca",
+        "Guardanapo com comida"
+      ],
+      "nao_vai": [
+        "Madeira tratada",
+        "Bituca de cigarro",
+        "Fezes de animal",
+        "Óleo de cozinha",
+        "Carvão"
+      ],
+      "dica": "Restos orgânicos podem virar adubo por compostagem."
+    },
+    {
+      "cor": "cinza",
+      "material": "Rejeito (não reciclável)",
+      "hex": "#616161",
+      "icone": "block",
+      "vai": [
+        "Papel higiênico usado",
+        "Fralda descartável",
+        "Absorvente",
+        "Esponja de cozinha usada",
+        "Bituca de cigarro"
+      ],
+      "nao_vai": [
+        "Pilha — descarte especial",
+        "Bateria — descarte especial",
+        "Eletrônico — descarte especial",
+        "Remédio vencido — descarte especial",
+        "Lâmpada fluorescente — descarte especial"
+      ],
+      "dica": "Os itens que NÃO vão no cinza precisam de pontos de coleta especializados (ecopontos, farmácias, etc.)."
+    }
+  ]
+}

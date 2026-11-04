@@ -1,0 +1,344 @@
+.screenWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+  padding-bottom: calc(var(--bottom-nav-height) + var(--space-xl));
+}
+
+.topHeader {
+  padding: var(--space-lg) var(--space-lg) var(--space-md);
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-divider);
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.logoBadge {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-button);
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+[data-theme="high-contrast"] .logoBadge {
+  background-color: var(--color-accent);
+  color: #000000;
+}
+
+.appName {
+  font-size: var(--font-size-title);
+  line-height: var(--line-height-title);
+  font-weight: var(--font-weight-title);
+  color: var(--color-primary);
+}
+
+[data-theme="high-contrast"] .appName {
+  color: var(--color-accent);
+}
+
+.parkSub {
+  font-size: var(--font-size-support);
+  line-height: var(--line-height-support);
+  color: var(--color-on-surface-secondary);
+}
+
+.mainContent {
+  flex: 1;
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.alertSection {
+  margin-top: var(--space-xs);
+}
+
+.capivaraBanner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md) var(--space-lg);
+  background-color: var(--color-surface-card);
+  border: 2px solid var(--color-warning);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  cursor: pointer;
+  min-height: var(--min-touch-target);
+  transition: transform var(--transition-fast);
+}
+
+.capivaraBanner:hover,
+.capivaraBanner:focus-visible {
+  transform: translateY(-2px);
+}
+
+.capivaraIconBox {
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: var(--radius-button);
+  background-color: #FFF3E0;
+  color: #E65100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+[data-theme="high-contrast"] .capivaraIconBox {
+  background-color: #000000;
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+}
+
+.capivaraInfo {
+  flex: 1;
+}
+
+.capivaraTag {
+  display: inline-block;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--color-warning);
+  margin-bottom: 2px;
+}
+
+.capivaraInfo strong {
+  display: block;
+  font-size: var(--font-size-card-title);
+  line-height: var(--line-height-card-title);
+  color: var(--color-on-surface);
+}
+
+.capivaraInfo p {
+  font-size: var(--font-size-support);
+  line-height: var(--line-height-support);
+  color: var(--color-on-surface-secondary);
+}
+
+.arrowIcon {
+  color: var(--color-on-surface-tertiary);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.sectionTitle {
+  font-size: var(--font-size-card-title);
+  line-height: var(--line-height-card-title);
+  font-weight: var(--font-weight-title);
+  color: var(--color-on-surface);
+}
+
+.quickFindSection {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.quickFindGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-sm);
+}
+
+.quickFindButton {
+  display: flex;
+  min-width: 0;
+  min-height: 52px;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  background: var(--color-surface-card);
+  color: var(--color-on-surface);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+}
+
+.quickFindButton svg {
+  flex: 0 0 auto;
+  color: var(--color-primary);
+}
+
+.quickFindButton:hover,
+.quickFindButton:focus-visible {
+  border-color: var(--color-primary);
+  background: var(--color-surface-elevated);
+}
+
+[data-theme="high-contrast"] .quickFindButton svg {
+  color: var(--color-accent);
+}
+
+.homeFavorites {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--color-divider);
+}
+
+.homeFavorites h3 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  font-size: 14px;
+}
+
+.homeFavorites h3 svg {
+  color: var(--color-primary);
+}
+
+.homeFavorites > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.homeFavorites button {
+  display: inline-flex;
+  min-height: 40px;
+  align-items: center;
+  gap: 6px;
+  padding: 0 10px;
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+  background: var(--color-surface-card);
+  color: var(--color-on-surface);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.cardItem {
+  min-height: var(--min-touch-target);
+}
+
+.cardInner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  width: 100%;
+}
+
+.iconCircle {
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: var(--radius-button);
+  background-color: var(--color-surface-elevated);
+  border: 1px solid var(--color-border);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+[data-theme="high-contrast"] .iconCircle {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.cardBody {
+  flex: 1;
+}
+
+.cardTitle {
+  font-size: var(--font-size-card-title);
+  line-height: var(--line-height-card-title);
+  font-weight: var(--font-weight-card-title);
+  color: var(--color-on-surface);
+  margin-bottom: 2px;
+}
+
+.cardDesc {
+  font-size: var(--font-size-support);
+  line-height: var(--line-height-support);
+  color: var(--color-on-surface-secondary);
+}
+
+.cardActionRow {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--color-primary);
+  font-size: var(--font-size-support);
+  font-weight: 700;
+}
+
+[data-theme="high-contrast"] .cardActionRow {
+  color: var(--color-accent);
+}
+
+.accessText {
+  display: none;
+}
+
+@media (min-width: 480px) {
+  .accessText {
+    display: inline;
+  }
+}
+
+.emergencyCard {
+  background-color: var(--color-surface-elevated);
+  border: 1px dashed var(--color-border-strong);
+  border-radius: var(--radius-card);
+  padding: var(--space-md) var(--space-lg);
+}
+
+.emergencyRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.emergencyTag {
+  background-color: #D32F2F;
+  color: #FFFFFF;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: var(--radius-chip);
+  letter-spacing: 0.5px;
+}
+
+[data-theme="high-contrast"] .emergencyTag {
+  background-color: var(--color-accent);
+  color: #000000;
+}
+
+.emergencyRow p {
+  font-size: var(--font-size-support);
+  line-height: var(--line-height-support);
+  color: var(--color-on-surface);
+}

@@ -1,0 +1,71 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--z-bottom-nav);
+  background-color: var(--color-surface-card);
+  border-top: 1px solid var(--color-divider);
+  padding-bottom: var(--safe-area-bottom);
+  height: calc(var(--bottom-nav-height) + var(--safe-area-bottom));
+}
+
+.list {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: var(--bottom-nav-height);
+}
+
+.item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  width: 100%;
+  min-height: var(--min-touch-target);
+  padding: var(--space-sm) var(--space-xs);
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--color-on-surface-tertiary);
+  transition: color var(--transition-fast);
+  font-family: var(--font-family);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.tab:hover {
+  color: var(--color-on-surface-secondary);
+}
+
+.tab:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: -3px;
+  border-radius: var(--radius-button);
+}
+
+.tab.active {
+  color: var(--color-primary);
+}
+
+.icon {
+  flex-shrink: 0;
+}
+
+.label {
+  font-size: var(--font-size-tab-label);
+  line-height: var(--line-height-tab-label);
+  font-weight: var(--font-weight-tab-label);
+  white-space: nowrap;
+}

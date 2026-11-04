@@ -1,0 +1,18 @@
+{
+  "name": "Trilha Clara — Parque Ecológico de Águas Claras",
+  "short_name": "Trilha Clara",
+  "description": "Guia de parque acessível, descarte correto e proteção da fauna do Parque Ecológico de Águas Claras (DF). Sem cadastro e funciona offline.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAFDF7",
+  "theme_color": "#2D6A4F",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

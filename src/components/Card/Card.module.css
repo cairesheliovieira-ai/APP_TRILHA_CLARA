@@ -1,0 +1,27 @@
+.card {
+  background-color: var(--color-surface-card);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  padding: var(--space-lg);
+  font-family: var(--font-family);
+  transition: box-shadow var(--transition-fast);
+}
+
+/* Interactive card styles */
+.card[role="button"] {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.card[role="button"]:hover {
+  box-shadow: var(--shadow-elevated);
+}
+
+.card[role="button"]:active {
+  box-shadow: var(--shadow-card);
+}
+
+.card[role="button"]:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+}

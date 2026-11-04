@@ -1,0 +1,38 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-chip);
+  font-family: var(--font-family);
+  font-size: var(--font-size-support);
+  line-height: var(--line-height-support);
+  font-weight: var(--font-weight-card-title);
+  white-space: nowrap;
+}
+
+.icon {
+  flex-shrink: 0;
+}
+
+.text {
+  /* Ensure text is always visible, never relies only on color */
+}
+
+/* Disponível — green */
+.disponivel {
+  color: var(--color-status-disponivel);
+  background-color: color-mix(in srgb, var(--color-status-disponivel) 10%, transparent);
+}
+
+/* Pode lotar — orange */
+.podeLotar {
+  color: var(--color-status-pode-lotar);
+  background-color: color-mix(in srgb, var(--color-status-pode-lotar) 10%, transparent);
+}
+
+/* Precisa de atenção — red */
+.precisaAtencao {
+  color: var(--color-status-atencao);
+  background-color: color-mix(in srgb, var(--color-status-atencao) 10%, transparent);
+}

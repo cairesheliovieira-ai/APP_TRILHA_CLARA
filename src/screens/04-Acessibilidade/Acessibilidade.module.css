@@ -1,0 +1,213 @@
+.screenWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+  padding-bottom: calc(var(--bottom-nav-height) + var(--space-xl));
+}
+
+.header {
+  padding: var(--space-lg) var(--space-lg) var(--space-md);
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-divider);
+}
+
+.headerTitleGroup {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.headerIcon {
+  color: var(--color-primary);
+}
+
+[data-theme="high-contrast"] .headerIcon {
+  color: var(--color-accent);
+}
+
+.title {
+  font-size: var(--font-size-title);
+  line-height: var(--line-height-title);
+  font-weight: var(--font-weight-title);
+  color: var(--color-primary);
+}
+
+[data-theme="high-contrast"] .title {
+  color: var(--color-accent);
+}
+
+.subtitle {
+  font-size: var(--font-size-support);
+  line-height: var(--line-height-support);
+  color: var(--color-on-surface-secondary);
+  margin-top: 4px;
+}
+
+.mainContent {
+  flex: 1;
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  max-width: 680px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.infoBox {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  padding: var(--space-md) var(--space-lg);
+  background-color: var(--color-surface-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+}
+
+.infoIcon {
+  color: var(--color-primary);
+  margin-top: 2px;
+}
+
+[data-theme="high-contrast"] .infoIcon {
+  color: var(--color-accent);
+}
+
+.infoText {
+  font-size: var(--font-size-support);
+  line-height: var(--line-height-support);
+  color: var(--color-on-surface);
+}
+
+.listSection {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.cardsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.accessCard {
+  border: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.itemTitleArea {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+}
+
+.iconBox {
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: var(--radius-button);
+  background-color: var(--color-surface-elevated);
+  border: 1px solid var(--color-border);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+[data-theme="high-contrast"] .iconBox {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.categoryTag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-on-surface-tertiary);
+  letter-spacing: 0.5px;
+}
+
+.cardHeading {
+  font-size: var(--font-size-card-title);
+  line-height: var(--line-height-card-title);
+  font-weight: var(--font-weight-card-title);
+  color: var(--color-on-surface);
+}
+
+.itemDescription {
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  color: var(--color-on-surface-secondary);
+}
+
+.statusNote {
+  font-size: var(--font-size-support);
+  color: var(--color-on-surface);
+  background-color: var(--color-surface-elevated);
+  padding: 6px 12px;
+  border-radius: var(--radius-button);
+  border-left: 3px solid var(--color-primary);
+}
+
+[data-theme="high-contrast"] .statusNote {
+  border-left-color: var(--color-accent);
+}
+
+.cardActions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  padding-top: var(--space-xs);
+}
+
+.reportBarrierSection {
+  background-color: var(--color-surface-card);
+  border: 2px dashed var(--color-border-strong);
+  border-radius: var(--radius-card);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.barrierCta {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+}
+
+.barrierIcon {
+  color: var(--color-warning);
+}
+
+[data-theme="high-contrast"] .barrierIcon {
+  color: var(--color-accent);
+}
+
+.barrierText strong {
+  display: block;
+  font-size: var(--font-size-card-title);
+  line-height: var(--line-height-card-title);
+  color: var(--color-on-surface);
+  margin-bottom: 2px;
+}
+
+.barrierText p {
+  font-size: var(--font-size-support);
+  line-height: var(--line-height-support);
+  color: var(--color-on-surface-secondary);
+}

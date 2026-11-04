@@ -1,0 +1,91 @@
+{
+  "_meta": {
+    "descricao": "Pontos de interesse do Parque Ecológico de Águas Claras — exemplo para o app Trilha Clara",
+    "coordenadas_nota": "Coordenadas aproximadas dentro do limite do parque; confirmar localização de cada equipamento em campo",
+    "ultima_atualizacao": "2026-11-03"
+  },
+  "pontos": [
+    {
+      "id": "entrada-principal",
+      "nome": "Entrada Principal",
+      "tipo": "entrada",
+      "descricao": "Portão principal do Parque Ecológico de Águas Claras, com guarita e informações ao visitante.",
+      "acessivel": true,
+      "lat": -15.8335,
+      "lng": -48.0310,
+      "status": "disponivel",
+      "icone": "door-open",
+      "horario_funcionamento": "06h às 18h (a definir)"
+    },
+    {
+      "id": "banheiro-pcd",
+      "nome": "Banheiro Acessível (PCD)",
+      "tipo": "banheiro",
+      "descricao": "Banheiro adaptado para pessoas com deficiência, com barras de apoio, piso tátil e porta larga.",
+      "acessivel": true,
+      "lat": -15.8315,
+      "lng": -48.0295,
+      "status": "disponivel",
+      "icone": "accessibility",
+      "horario_funcionamento": "06h às 18h (a definir)"
+    },
+    {
+      "id": "vagas-preferenciais",
+      "nome": "Vagas Preferenciais",
+      "tipo": "vaga",
+      "descricao": "Estacionamento com vagas reservadas para idosos, gestantes e pessoas com deficiência, próximo à entrada principal.",
+      "acessivel": true,
+      "lat": -15.8330,
+      "lng": -48.0305,
+      "status": "pode_lotar",
+      "icone": "local-parking",
+      "quantidade": "8 vagas preferenciais (exemplo)"
+    },
+    {
+      "id": "coleta-seletiva-1",
+      "nome": "Ponto de Coleta Seletiva",
+      "tipo": "coleta",
+      "descricao": "Ponto central de coleta seletiva com contêineres para papel, plástico, metal, vidro, orgânico e rejeito.",
+      "acessivel": true,
+      "lat": -15.8308,
+      "lng": -48.0275,
+      "status": "disponivel",
+      "icone": "recycling",
+      "categorias_aceitas": ["papel", "plástico", "metal", "vidro", "orgânico", "rejeito"]
+    },
+    {
+      "id": "lixeira-reciclavel-1",
+      "nome": "Lixeiras de Recicláveis — Área do Lago",
+      "tipo": "lixeira",
+      "descricao": "Conjunto de lixeiras coloridas para descarte seletivo, localizadas próximo à área do lago.",
+      "acessivel": true,
+      "lat": -15.8295,
+      "lng": -48.0215,
+      "status": "disponivel",
+      "icone": "delete"
+    },
+    {
+      "id": "lixeira-reciclavel-2",
+      "nome": "Lixeiras de Recicláveis — Trilha Norte",
+      "tipo": "lixeira",
+      "descricao": "Conjunto de lixeiras coloridas para descarte seletivo, localizadas no início da trilha norte.",
+      "acessivel": false,
+      "lat": -15.8265,
+      "lng": -48.0220,
+      "status": "disponivel",
+      "icone": "delete"
+    },
+    {
+      "id": "trecho-pouco-iluminado",
+      "nome": "Trecho Pouco Iluminado",
+      "tipo": "trecho",
+      "descricao": "Segmento da trilha com iluminação insuficiente após o pôr do sol. Recomenda-se evitar o uso noturno ou levar lanterna.",
+      "acessivel": false,
+      "lat": -15.8350,
+      "lng": -48.0240,
+      "status": "precisa_atencao",
+      "icone": "warning",
+      "alerta": "Evitar após as 18h sem iluminação própria"
+    }
+  ]
+}

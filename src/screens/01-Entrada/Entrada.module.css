@@ -1,0 +1,130 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: var(--space-2xl) var(--space-lg);
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+}
+
+.content {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+}
+
+.header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.iconCircle {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-chip);
+  background-color: var(--color-surface-elevated);
+  border: 2px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.heroIcon {
+  color: var(--color-primary);
+}
+
+.title {
+  font-size: var(--font-size-title);
+  line-height: var(--line-height-title);
+  font-weight: var(--font-weight-title);
+  color: var(--color-primary);
+}
+
+[data-theme="high-contrast"] .title {
+  color: var(--color-accent);
+}
+
+.subtitle {
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  color: var(--color-on-surface-secondary);
+  font-weight: 500;
+}
+
+.badgeParque {
+  display: inline-block;
+  padding: 4px 12px;
+  background-color: var(--color-surface-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-chip);
+  font-size: var(--font-size-support);
+  color: var(--color-on-surface-tertiary);
+  font-weight: 600;
+  margin-top: var(--space-xs);
+}
+
+.benefitsSection {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.benefitItem {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  padding: var(--space-md) var(--space-lg);
+  background-color: var(--color-surface-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+}
+
+.benefitIconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: var(--radius-button);
+  background-color: var(--color-surface-elevated);
+  color: var(--color-primary);
+}
+
+.benefitText strong {
+  display: block;
+  font-size: var(--font-size-card-title);
+  line-height: var(--line-height-card-title);
+  color: var(--color-on-surface);
+  margin-bottom: 2px;
+}
+
+.benefitText p {
+  font-size: var(--font-size-support);
+  line-height: var(--line-height-support);
+  color: var(--color-on-surface-secondary);
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-sm);
+}
+
+.disclaimer {
+  font-size: var(--font-size-support);
+  line-height: var(--line-height-support);
+  color: var(--color-on-surface-tertiary);
+  text-align: center;
+}

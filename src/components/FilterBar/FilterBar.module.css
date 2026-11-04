@@ -1,0 +1,64 @@
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.scrollArea {
+  display: flex;
+  gap: var(--space-sm);
+  overflow-x: auto;
+  padding: var(--space-xs) 0;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scrollArea::-webkit-scrollbar {
+  display: none;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--min-touch-target);
+  padding: var(--space-sm) var(--space-lg);
+  border: 2px solid transparent;
+  border-radius: var(--radius-chip);
+  font-family: var(--font-family);
+  font-size: var(--font-size-support);
+  line-height: var(--line-height-support);
+  font-weight: var(--font-weight-card-title);
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast),
+    border-color var(--transition-fast);
+  -webkit-tap-highlight-color: transparent;
+  flex-shrink: 0;
+
+  /* Inactive state */
+  background-color: var(--color-surface-elevated);
+  color: var(--color-on-surface);
+}
+
+.chip:hover {
+  background-color: var(--color-border);
+}
+
+.chip:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Active chip */
+.chip.active {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  border-color: var(--color-primary);
+}
+
+.chip.active:hover {
+  background-color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+}

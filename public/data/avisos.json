@@ -1,0 +1,58 @@
+{
+  "_meta": {
+    "descricao": "Avisos e alertas do Parque Ecológico de Águas Claras — exemplo para o app Trilha Clara",
+    "ultima_atualizacao": "2026-11-03"
+  },
+  "avisos": [
+    {
+      "id": "alerta-iluminacao",
+      "tipo": "alerta",
+      "titulo": "Trechos com pouca iluminação à noite",
+      "mensagem": "Alguns trechos da trilha possuem iluminação insuficiente após as 18h. Recomendamos levar lanterna ou utilizar as rotas alternativas iluminadas.",
+      "acao_texto": "Ver rotas mais seguras",
+      "acao_rota": "/mapa",
+      "ativo": true,
+      "data": "2026-11-01"
+    },
+    {
+      "id": "alerta-queimada",
+      "tipo": "aviso",
+      "titulo": "Período seco: risco de queimada",
+      "mensagem": "Estamos no período de estiagem no Cerrado. Não faça fogueiras, não jogue bitucas de cigarro e denuncie focos de incêndio imediatamente.",
+      "acao_texto": "Saiba como denunciar",
+      "acao_rota": "/denuncia",
+      "ativo": true,
+      "data": "2026-11-01"
+    },
+    {
+      "id": "info-horario",
+      "tipo": "info",
+      "titulo": "Horário de funcionamento",
+      "mensagem": "O parque funciona diariamente das 6h às 18h. A entrada é gratuita. Após as 18h os portões são fechados.",
+      "acao_texto": null,
+      "acao_rota": null,
+      "ativo": true,
+      "data": "2026-11-01"
+    },
+    {
+      "id": "aviso-fauna",
+      "tipo": "info",
+      "titulo": "Não alimente os animais silvestres",
+      "mensagem": "Alimentar animais silvestres altera seus hábitos naturais, pode causar doenças e torna-os dependentes de humanos. Observe a distância e aprecie sem interferir.",
+      "acao_texto": "Conhecer a fauna do parque",
+      "acao_rota": "/fauna",
+      "ativo": true,
+      "data": "2026-11-01"
+    },
+    {
+      "id": "alerta-chuva",
+      "tipo": "alerta",
+      "titulo": "Atenção em dias de chuva forte",
+      "mensagem": "Após chuvas intensas, alguns trechos da trilha podem ficar alagados ou escorregadios. Use calçado adequado e evite áreas próximas a córregos.",
+      "acao_texto": "Ver mapa do parque",
+      "acao_rota": "/mapa",
+      "ativo": false,
+      "data": "2026-10-15"
+    }
+  ]
+}
